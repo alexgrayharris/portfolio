@@ -1,0 +1,296 @@
+/**/
+/**/
+/*Main styles*/
+/**/
+/**/
+
+/**/
+/*colors*/
+/**/
+:root {
+    --limegreen: #B4DB00;
+    --mediumgreen: #4CB676;
+    --darkgreen:#3B7B7B;
+    --lightgray: #DBDFD5;
+    --peach: #FA703F;
+    --charcoal:#27332F;
+    --white:#FFFFFF;
+}
+
+body {
+  background-color: var(--lightgray);
+  font-size: 12px;
+  font-family: 'Nunito', sans-serif;
+  color: var(--charcoal);
+  text-align: left;
+}
+
+h1 {
+  color: var(--peach);
+  font-size: 50px;
+  font-family: 'Pathway Gothic One', sans-serif;
+}
+
+#section-head {
+  margin-left: 5%;
+}
+
+h2 {
+  color: var(--charcoal);
+  font-family: 'Nunito', sans-serif;
+  font-size: 25px;
+}
+
+section {
+  margin: 10vh 0;
+}
+
+@media only screen and (min-width: 750px) and (max-width: 900px) {
+  body {
+    font-size: 18px;
+  }
+  h1 {
+    font-size: 55px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+}
+@media only screen and (min-width: 901px) {
+  body {
+    font-size: 20px;
+  }
+  h1 {
+    font-size: 65px;
+  }
+  h2 {
+    font-size: 40px;
+  }
+}
+
+/**/
+/*Header*/
+/**/
+header {
+  align-items: center;
+  background: url('../img/tree.png') no-repeat center top;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  height: 150vh;
+  justify-content: flex-end;
+  margin: 0 auto;
+}
+
+#hamburger-icon {
+  position: fixed;
+  top: 5%;
+  right: 5%;
+  width: 8%;
+}
+
+@media only screen and (min-width: 760px) {
+  #hamburger-icon {
+    width: 5%;
+  }
+}
+
+#header-text {
+  padding-bottom: 55vh;
+  text-align: center;
+  width: 90%;
+}
+
+/*AGH*/
+#title1 {
+  font-size: 100px;
+  margin: 0 auto;
+}
+
+/*Digital*/
+#title2 {
+  color: var(--peach);
+  font-size: 60px;
+}
+
+/*Watch your ideas grow.*/
+#title3 {
+  color: var(--white);
+  font-size: 30px;
+}
+
+@media only screen and (min-width: 750px) and (max-width: 900px) {
+  #title1 {
+    font-size: 130px;
+  }
+  #title2 {
+    font-size: 60px;
+  }
+  #title3 {
+    font-size: 35px;
+  }
+}
+@media only screen and (min-width: 900px) {
+  #title1 {
+    font-size: 150px;
+  }
+  #title2 {
+    font-size: 80px;
+  }
+  #title3 {
+    font-size: 50px;
+  }
+}
+
+header img {
+  transition: 0.4s;
+}
+
+header img:hover {
+    transform: scale(1.2);
+}
+
+/**/
+/*Section 1*/
+/**/
+
+#section1 {
+  margin: 5vh 0;
+  position: relative;
+}
+
+#headshot {
+  margin: 2vh 2vw;
+  width: 15%;
+  min-width: 100px;
+}
+
+@media only screen and (min-width: 750px) {
+  #headshot {
+    float: right;
+    margin: 0 2vw;
+  }
+}
+
+/**/
+/*Section 2*/
+/**/
+
+#section2 {
+  margin: 5vh 0 5vh 5%;
+}
+.feature {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--mediumgreen);
+  height: 200px;
+  margin: 5% 5%;
+  transition: 0.4s;
+  width: 200px;
+  text-align: center;
+  padding: 5%;
+}
+
+.feature h2 {
+  color: var(--lightgray);
+  font-family: 'Pathway Gothic One', sans-serif;
+}
+
+.feature:hover {
+  box-shadow: 5px var(--limegreen);
+  transform: scale(1.1);
+}
+
+.content-section {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 5vh 0;
+}
+
+
+
+/**/
+/*Signup form*/
+/**/
+
+#section4 {
+  margin: 5vh 0 0 5vw;
+  position: relative;
+}
+
+#contact-form input {
+background-color: var(--lightgray);
+ border: medium none;
+ border-bottom: 2px solid var(--darkgreen);
+ border-radius: 15%;
+ font-family: 'Nunito', sans-serif;
+ display: block;
+ margin: 2.5vh auto;
+ outline: none;
+ padding: 2% 0;
+ text-align: center;
+}
+
+.mc-field-group h2 {
+  margin-left: 5%;
+}
+#mce-FNAME, #mce-LNAME, #mce-EMAIL {
+  width: 50%;
+}
+
+#contact-form input:hover, #contact-form input:focus {
+  border-bottom: 5px solid var(--peach);
+}
+
+/*Submit button*/
+#contact-form input[type="submit"] {
+  background-color: var(--mediumgreen);
+  border: 0;
+  border-radius: 5px;
+  color: white;
+  display: block;
+  font-family: 'Nunito', sans-serif;
+  padding: 3%;
+  text-align: center;
+  width: 30%;
+}
+/*Hover submit button style*/
+.submit-button:hover, #mc-embedded-subscribe:hover {
+  box-shadow: 2px 3px 3px var(--limegreen);
+}
+
+#section4 p {
+  margin-left: 7%;
+}
+/**/
+/*Footer*/
+/**/
+footer {
+  background: url('../img/tree.png') no-repeat center center;
+  padding: 15vh;
+}
+
+footer p {
+  color: var(--lightgray);
+  padding: 10vh 0;
+  text-align: center;
+}
+
+#social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 10% 0 10%;
+}
+
+footer img {
+  transition: all 0.5s;
+  max-width: 50px;
+}
+
+footer img:hover {
+  transform: scale(1.2);
+}
