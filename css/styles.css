@@ -184,10 +184,10 @@ header img:hover {
   align-items: center;
   justify-content: space-around;
   background-color: var(--mediumgreen);
-  height: 200px;
+  height: 250px;
   margin: 5% 5%;
   transition: 0.4s;
-  width: 200px;
+  width: 250px;
   text-align: center;
   padding: 5%;
 }
